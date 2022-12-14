@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/projeto_03_tela_login/css/style.css">
+    <script src="https://kit.fontawesome.com/2466f2fe71.js" crossorigin="anonymous"></script>
+    <script src="/projeto_03_tela_login/angular.js"></script>
+    <script src="/projeto_03_tela_login/script.js"></script>
+    <title>QMagico</title>
+</head>
+<body>
+    <header class="header-top">
+        <div class="menu">
+            <i class="fa-solid fa-bars"></i>
+            <img src="/projeto_03_tela_login/img/qmagico_novo_fundo_branco_pequeno.png" alt="logo-qmagico">
+            <span class="titulo-ns">Escola Eduqo</span>
+        </div>
+
+        <div class="perfil">
+            <i class="fa-solid fa-comments"></i>
+            <i class="fa-regular fa-circle-question"></i>
+            <i class="fa-solid fa-bell"></i>
+            <i class="fa-solid fa-user"></i>
+        </div>
+    </header>
+
+    <div class="btn-criar">
+        <button onclick="abrirModal()">Criar novo usuário</button>
+    </div>
+
+    <table class="painel-usuarios">
+        <thead>
+            <tr class="cabecalho">
+                <th></th>
+                <th>Nome</th>
+                <th>Email</th>
+                <th>Login</th>
+                <th>Turmas</th>
+                <th>Perfil</th>
+            </tr>
+        </thead>
+        
+
+        <tr>
+            <td><input type="checkbox"></td>
+            <td>Lucas</td>
+            <td>lucasjborges.3@gmail.com</td>
+            <td>lucasjborges</td>
+            <td>EM2A</td>
+            <td>Estudante</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox"></td>
+            <td>Lucas</td>
+            <td>lucasjborges.3@gmail.com</td>
+            <td>lucasjborges</td>
+            <td>EM2A</td>
+            <td>Estudante</td>
+        </tr>
+
+        <tr>
+            <td><input type="checkbox"></td>
+            <td>Lucas</td>
+            <td>lucasjborges.3@gmail.com</td>
+            <td>lucasjborges</td>
+            <td>EM2A</td>
+            <td>Estudante</td>
+        </tr>
+    </table>
+
+
+    <div class="modal-cadastro fechaModal" id="modal">
+        <div class="titulo">
+            <h3>Criar novo usuário</h3>
+            <i class="fa-solid fa-xmark" onclick="fechaModal()"></i>
+        </div>
+
+        <form id="form-cadastro">
+            <label>Nome</label>
+            <input type="text" placeholder="Nome Completo" id="nome">
+
+            <label>Email</label>
+            <input type="email" placeholder="Email" id="email">
+
+            <label>Login</label>
+            <input type="text" placeholder="Login" id="login">
+
+            <label>Senha</label>
+            <input type="password" placeholder="Defina uma senha" id="senha">
+
+            <div class="perfis-usuario">
+                <label>Perfil</label>
+                
+                <div class="perfil-usuario">
+                    <input type="radio" name="perfil" value="estudante">
+                    <span>Estudante</span>
+
+                    <input type="radio" name="perfil" value="docente">
+                    <span>Docente</span>
+
+                    <input type="radio" name="perfil" value="administrante">
+                    <span>Administrante</span>
+
+                    <input type="radio" name="perfil" value="visitante">
+                    <span>Visitante</span>
+                </div>
+                
+            </div>
+
+            <div class="turmas">
+                <label>Turmas</label>
+
+                <div class="turma">
+                    <input type="radio" name="turma" value="EM1A">
+                    <span>EM1A</span>
+
+                    <input type="radio" name="turma" value="EM1B">
+                    <span>EM1B</span>
+
+                    <input type="radio" name="turma" value="EM1C">
+                    <span>EM1C</span>
+
+                    <input type="radio" name="turma" value="EM1D">
+                    <span>EM1D</span>
+                </div>
+                
+            </div>
+
+            <div class="btns">
+                <button class="cancelar" onclick="fechaModal()">Cancelar</button>
+                <button class="cadastrar">Cadastrar</button>
+            </div>
+
+
+            
+        </form>
+        
+    </div>
+</body>
+</html>

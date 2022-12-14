@@ -1,0 +1,198 @@
+$cor-header: rgb(39,57,98)
+$texto-cor: #fff
+$btn: #47939e
+$cor-check: #d9ffd9
+
+*
+    font-family: "Proxima Nova","Helvetica Neue",Helvetica,Arial,Sans-Serif
+    box-sizing: border-box
+    padding: 0
+    margin: 0
+
+body
+    background-color: #ccc
+
+.header-top
+    display: flex
+    justify-content: space-between
+    align-items: center
+    background: $cor-header
+    height: 54px
+    width: 100%
+
+.menu
+    margin-left: 20px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    
+
+    img
+        width: 25px
+        height: 25px
+        margin-right: 10px
+    
+    i
+        margin-right: 15px
+        font-size: 18px
+        color: $texto-cor
+        cursor: pointer
+    
+    span
+        color: $texto-cor
+        font-weight: 600
+
+.perfil
+    margin-right: 20px
+    display: flex
+    justify-content: space-between
+    width: 150px
+
+    i
+        font-size: 22px
+        color: $texto-cor
+        cursor: pointer
+
+.btn-criar
+    background-color: $texto-cor
+    height: 48px
+    width: 100%
+    display: flex
+    justify-content: flex-end
+    align-items: center
+
+    button
+        margin-right: 30px
+        height: 30px
+        width: 150px
+        cursor: pointer
+        font-weight: 600
+        color: $texto-cor
+        background-color: $btn
+        border: none
+
+        &:hover
+            background-color: #418792
+
+.painel-usuarios
+    width: 100%
+    text-align: center
+    margin-top: 10px
+    
+
+thead
+    border: 1px solid black
+    
+
+thead th
+    padding: 10px
+    color: $btn
+    font-size: 14px
+
+td
+    padding: 10px
+
+.checked
+    background-color: $cor-check
+
+//Modal de cadastro
+
+.modal-cadastro
+    background-color: $texto-cor
+    width: 450px
+    height: 550px
+    position: fixed
+    top: 15%
+    left: 35%
+    z-index: 5
+    flex-direction: column
+    border-radius: 5px
+    padding: 10px
+    opacity: 1
+    transition: 0.5s
+
+.abrirModal
+    display: flex
+
+.fechaModal
+    display: none
+
+.titulo
+    display: flex
+    justify-content: space-between
+    padding: 10px
+    border-bottom: 1px solid #ccc
+    margin-bottom: 15px
+
+    h3
+        font-size: 15px
+    
+    i
+        cursor: pointer
+
+#form-cadastro
+    display: flex
+    flex-direction: column
+
+    label
+        margin-bottom: 5px
+        margin-top: 5px
+
+    input
+        padding: 8px
+        outline: none
+
+.perfis-usuario, .turmas
+    margin-top: 15px
+    margin-bottom: 15px
+
+.perfil-usuario
+    margin-top: 15px
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    width: 100%
+    align-items: center
+
+.turma
+    margin-top: 15px
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    width: 100%
+    align-items: center
+
+.btns
+    display: flex
+    justify-content: center
+
+    button
+        font-size: 20px
+        padding: 5px
+        border-radius: 3px
+        outline: none
+        cursor: pointer
+        font-weight: 500
+
+.cadastrar
+    
+    color: $texto-cor
+    background-color: $btn
+    border: none
+    margin-left: 5px
+
+    &:hover
+        background-color: #418792
+
+.cancelar
+    border: 1px solid #ccc
+
+    &:hover
+        background-color: #bbbbbb
+
+
+
+    
+
+
+        
